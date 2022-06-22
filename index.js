@@ -59,3 +59,95 @@
 //     console.log(fact)
 // }
 
+// 7 - Factorielle v2
+// for(let i = 1; i <= 8; i++){
+//     total = 0
+//     for(let j = 0; j <= i; j++){
+//         total = total * j 
+//         if(total === 0){
+//             total = 1
+//         }
+//     }
+//     console.log(total)
+// }
+
+// 8 - Somme des carrés
+// let res = 0
+// for(let i = 5; i <= 10; i++){
+//     res = res + (i * i)
+//     console.log(res)
+// }
+
+// 9 - Comptons
+// let res = 0
+
+// for(let i = 100; i <= 1000; i++){
+//     if(i % 7 === 0){
+//         res += 1
+//     }
+// }
+// console.log(res)
+
+// 10 - Chanceux
+// let res = 0
+// for(let i = 0; i < 20; i++){
+//     res = res + (Math.floor(Math.random() * 6) + 1)
+//     console.log(res)
+// }
+
+// 11 - Des boites
+// var box1 = 12;
+// var box2 = 5;
+
+// for (var i = 12; i < 14; i++) {
+//     box1 = box2;
+//     console.log(box1 + box2);
+//     box2 = box1 + i;
+// }
+
+// console.log(box1);
+// console.log(box2);
+// console.log(i);
+
+// 12 - D'autres boites
+// var box1 = 12;
+
+// for (var i = 12; i !== 0; i = i - 3) {
+//     console.log(box1);
+//     box1 = box1 + i;
+// }
+
+// console.log(box1);
+// console.log(i);
+
+// 13 - Encore des boites
+// var box1 = 0;
+// var box2 = 3;
+
+// for (var i = 0; i > -4; i--) {
+//     if (i % 2 === 0) {
+//         console.log(box1 + i);
+//         box2++;
+//     } else {
+//         console.log(box2 + i);
+//         box1--;
+//     }
+// }
+
+// console.log(box1);
+// console.log(box2);
+// console.log(i);
+
+// 14 - Amstrong Number
+let arrayOfDigits = 0
+let res = 0
+for(i = 0; i <= 10000; i++){
+    arrayOfDigits = Array.from(String(i), Number)
+    for(let j = 0; j < i; j++){
+        res = res + j
+    }
+    if(arrayOfDigits === res){
+        console.log(arrayOfDigits)
+    }
+    // console.log(arrayOfDigits)
+}
