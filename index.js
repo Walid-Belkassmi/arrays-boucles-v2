@@ -139,7 +139,7 @@
 // console.log(i);
 
 // 14 - Amstrong Number
-// for(i = 0; i <= 10000; i++){
+// for(i = 0; i <= 1000; i++){
 //     let amString = i.toString()
 //     let array = amString.split("")
 //     let total = 0
@@ -153,7 +153,26 @@
 //     }
 // }
 
-
+// 15 - Amstrong Number générique
+for(i = 0; i <= 10000; i++){
+    let amString = i.toString()
+    let array = amString.split("")
+    let total = 0
+    for(let j = 0; j < array.length; j++){
+        if(array.length === 3){
+            let a = array[j]
+            a = Number (a) ** 3
+            total = total + a
+        }else{
+            let a = array[j]
+            a = Number (a) ** 4
+            total = total + a
+        }
+    }
+    if(total === i){
+        console.log(`${i} est un nombre d'Amstrong`)
+    }
+}
 
 
 
