@@ -139,15 +139,21 @@
 // console.log(i);
 
 // 14 - Amstrong Number
-let arrayOfDigits = 0
-let res = 0
-for(i = 0; i <= 10000; i++){
-    arrayOfDigits = Array.from(String(i), Number)
-    for(let j = 0; j < i; j++){
-        res = res + j
-    }
-    if(arrayOfDigits === res){
-        console.log(arrayOfDigits)
-    }
-    // console.log(arrayOfDigits)
-}
+// for(i = 0; i <= 10000; i++){
+//     let amString = i.toString()
+//     let array = amString.split("")
+//     let total = 0
+//     for(let j = 0; j < array.length; j++){
+//         let a = array[j]
+//         a = Number (a) ** 3
+//         total = total + a
+//     }
+//     if(total === i){
+//         console.log(`${i} est un nombre d'Amstrong`)
+//     }
+// }
+
+
+
+
+
